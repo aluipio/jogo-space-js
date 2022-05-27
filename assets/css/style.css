@@ -1,0 +1,94 @@
+@font-face {
+	font-family: Titulo;
+	src: url(../font/Linked.ttf);
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(0, 8, 21);
+}
+
+#rotulo {
+    display: flex;
+    height: 60px;
+    width: 600px;
+    color: burlywood;
+    border-radius: 10px;
+    font-family: Titulo;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+#placar {
+    display: flex;
+    height: 40px;
+    width: 600px;
+    color: burlywood;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-play-area {
+    background-color: black;
+    background-image: url('./../img/space.png');
+    height: 600px;
+    width: 600px;
+    border: 2px solid #fff;
+}
+
+.game-instructions {
+    position: relative;
+    color: white;
+    left: 7rem;
+    top: 0px;
+}
+
+.start-button {
+    position: relative;
+    color: white;
+    top: 9rem;
+    left: 15rem;
+    cursor: pointer;
+}
+
+.player-shooter {
+    position: relative;
+    height: 60px;
+    width: 70px;
+    left: 10px;
+    top: 250px
+}
+
+.laser {
+    position: relative;
+    width: 40px;
+    height: 30px;
+}
+
+.alien {
+    height: 60px;
+    width: 70px;
+    position: relative;
+}
+
+.alien-transition {
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.dead-alien {
+    height: 60px;
+    width: 70px;
+    position: relative;
+    opacity: 0;
+}
